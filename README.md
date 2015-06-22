@@ -8,4 +8,4 @@ To edit the sass file you will either have to use [CodeKit](http://incident57.co
 
 **@tgifelix - [GitHub] (http://www.github.com/tgifelix/) | [CodePen] (http://codepen.io/tgifelix/) | [Home Page] (http://www.tgifelix.com/)**
 
-![Screenshot](https://raw.githubusercontent.com/TGIFelix/neatella/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/TGIFelix/neatella/master/screen.png)
