@@ -1,0 +1,279 @@
+/* BOURBON NEAT */
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(animate.min.css);
+@import url(font-awesome.min.css);
+@import url(font-awesome-animation.min.css);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* SASS */
+/* IMPORTS */
+/* BODY */
+body {
+  margin: 0;
+  width: 100%;
+  font: 18px "Droid Sans", "Helvetica Neue";
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+/* GENERAL STYLE */
+h1 {
+  font-size: 300%; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 200%; } }
+
+h2 {
+  font-size: 150%; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 110%; } }
+
+section {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: table;
+  background-color: #373b44; }
+  section .fa {
+    color: #fe4b74; }
+  section a {
+    color: #fe4b74;
+    text-decoration: none;
+    font-weight: bold; }
+    section a:hover {
+      color: #fff;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
+  section:nth-of-type(2n) {
+    background-color: #fe4b74; }
+    section:nth-of-type(2n) .fa {
+      color: #373b44; }
+    section:nth-of-type(2n) a {
+      color: #373b44;
+      text-decoration: none;
+      font-weight: bold; }
+      section:nth-of-type(2n) a:hover {
+        color: #fff;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        transition: all 0.7s; }
+
+footer {
+  padding: 0.7%;
+  text-align: center;
+  font-size: 90%;
+  background-color: #373b44;
+  color: white; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
+    footer a:hover {
+      color: #fe4b74;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
+  footer .fa {
+    color: #fe4b74; }
+
+/* CUSTOM STYLES */
+#intro,
+#download {
+  height: 95vh; }
+
+#about,
+#service {
+  height: 100vh; }
+
+.one {
+  padding-top: 5%;
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  margin-left: 0%; }
+  .one:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .one {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      margin-left: 0%;
+      padding: 15% 5% 5%;
+      font-size: 100%; }
+      .one:last-child {
+        margin-right: 0; } }
+  .one p {
+    padding-bottom: 3%; }
+
+.two {
+  padding: 7% 0 0 5%;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%; }
+  .two:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .two {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      padding: 5% 5% 0; }
+      .two:last-child {
+        margin-right: 0; } }
+
+.three {
+  padding: 7% 5% 0 0;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: 51.178825799%; }
+  .three:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .three {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      margin-left: 0%;
+      padding: 5% 5% 0; }
+      .three:last-child {
+        margin-right: 0; } }
+
+.four {
+  padding-top: 5%;
+  padding-left: 5%;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .four:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .four {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      padding: 0 5%; }
+      .four:last-child {
+        margin-right: 0; } }
+
+.iphone {
+  padding: 7% 0 5%;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%; }
+  .iphone:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .iphone {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      padding: 10% 0 20%; }
+      .iphone:last-child {
+        margin-right: 0; } }
+
+.ipad {
+  padding: 7% 5% 5%;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: -102.3576515979%; }
+  .ipad:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .ipad {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      margin-left: 0%;
+      padding: 10% 0 20%; }
+      .ipad:last-child {
+        margin-right: 0; } }
+
+.browser {
+  padding: 0 5% 0 0;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .browser:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .browser {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 100%;
+      padding: 10% 0 20%; }
+      .browser:last-child {
+        margin-right: 0; } }
+
+.color1 {
+  color: #373b44; }
+
+.color2 {
+  color: #fe4b74; }
+
+/* BUTTONS */
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 20px 0;
+  /* REM fallback */
+  margin: 0;
+  /* Account for extra height from box shadow */
+  padding: 1em 2em;
+  font-weight: 200;
+  text-decoration: none;
+  color: white !important;
+  border-radius: 0;
+  transition: all 0.25s;
+  transform: translate(0, -2px);
+  background-color: #888;
+  box-shadow: 0 2px 0 #737373; }
+  .button:hover, .button:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    transform: translate(0, 0); }
+  .button:hover, .button:focus {
+    background-color: #a5a5a5; }
+  .button:active {
+    background-color: #888; }
+  .button .fa {
+    color: #fff !important; }
+
+/* ANIMATIONS */
+.delay1 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s; }
+
+/* HIDE (hide buttons on small devices) */
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .download {
+    display: none; } }

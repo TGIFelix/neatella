@@ -1,0 +1,233 @@
+/* BOURBON NEAT */
+@import "bourbon", "neat";
+
+/* SASS */
+$color1: #373b44;
+$color2: #fe4b74;
+$white: #fff;
+$link: #505050;
+$button-radius: 0;
+$button-color: #888;
+$mobile: new-breakpoint(max-width 768px 4);
+
+/* IMPORTS */
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(animate.min.css);
+@import url(font-awesome.min.css);
+@import url(font-awesome-animation.min.css);
+
+/* BODY */
+body {
+  margin: 0;
+  width: 100%;
+  font: 18px 'Droid Sans', 'Helvetica Neue',;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* GENERAL STYLE */
+h1 {
+  font-size: 300%;
+  @include media($mobile) {
+    font-size: 200%;
+  }
+}
+h2 {
+  font-size: 150%;
+  @include media($mobile) {
+    font-size: 110%;
+  }
+}
+section {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: table;
+  background-color: $color1;
+  .fa {
+    color: $color2;
+  }
+  a {
+    color: $color2;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: $white;
+      @include transition(all 0.5s);
+    }
+  }
+  &:nth-of-type(2n) {
+    background-color: $color2;
+    .fa {
+      color: $color1;
+    }
+    a {
+      color: $color1;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        color: $white;
+        @include transition(all 0.7s);
+      }
+    }
+  }
+}
+footer {
+  padding: 0.7%;
+  text-align: center;
+  font-size: 90%;
+  background-color: $color1;
+  color: white;
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $color2;
+      @include transition(all 0.5s);
+    }
+  }
+  .fa {
+    color: $color2;
+  }
+}
+
+/* CUSTOM STYLES */
+#intro,
+#download {
+  height: 95vh;
+}
+#about,
+#service {
+  height: 100vh;
+}
+.one {
+  padding-top: 5%;
+  text-align: center;
+  @include span-columns(12);
+  @include shift(0);
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+    padding: 15% 5% 5%;
+    font-size: 100%;
+  }
+  p {
+    padding-bottom: 3%;
+  }
+}
+.two {
+  padding: 7% 0 0 5%;
+  @include span-columns(8);
+  @include media($mobile) {
+    @include span-columns(4);
+    padding: 5% 5% 0;
+  }
+}
+.three {
+  padding: 7% 5% 0 0;
+  @include span-columns(6);
+  @include shift(6);
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+    padding: 5% 5% 0;
+  }
+}
+.four {
+  padding-top: 5%;
+  padding-left: 5%;
+  @include span-columns(6);
+  @include media($mobile) {
+    @include span-columns(4);
+    padding: 0 5%;
+  }
+}
+.iphone {
+  padding: 7% 0 5%;
+  @include span-columns(4);
+  @include media($mobile) {
+    @include span-columns(4);
+    padding: 10% 0 20%;
+  }
+}
+.ipad {
+  padding: 7% 5% 5%;
+  @include span-columns(6);
+  @include shift(-12);
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+    padding: 10% 0 20%;
+  }
+}
+.browser {
+  padding: 0 5% 0 0;
+  @include span-columns(6);
+  @include media($mobile) {
+    @include span-columns(4);
+    padding: 10% 0 20%;
+  }
+}
+.color1 {
+  color: $color1;
+}
+.color2 {
+  color: $color2;
+}
+
+/* BUTTONS */
+@mixin button($color) {
+  background-color: $color;
+  box-shadow: 0 2px 0 shade($color, 15%);
+  &:hover,
+  &:focus {
+    background-color: tint($color, 25%);
+  }
+  &:active {
+    background-color: $color;
+  }
+}
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 20px 0;
+  /* REM fallback */
+  margin: 0;
+  /* Account for extra height from box shadow */
+  padding: 1em 2em;
+  font-weight: 200;
+  text-decoration: none;
+  color: white !important;
+  border-radius: $button-radius;
+  transition: all 0.25s;
+  transform: translate(0, -2px);
+  &:hover,
+  &:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    transform: translate(0, 0);
+  }
+  @include button($button-color);
+  .fa {
+    color: $white !important;
+  }
+}
+
+/* ANIMATIONS */
+.delay1 {
+  @include animation-delay(1s);
+}
+
+/* HIDE (hide buttons on small devices) */
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .download {
+    display: none;
+  }
+}
