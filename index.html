@@ -10,7 +10,7 @@ HEAD
 -->
 	<head>
 		<title>Neatella</title>
-<!--
+	<!--
 META
 -->
 		<meta charset="utf-8">
@@ -27,23 +27,35 @@ STYLE
 SCRIPTS
 -->
 		<!-- MailChimp PopUp -->
-		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us9.list-manage.com","uuid":"e456e6cff6de66ea7893663b1","lid":"c1dc220175"}) })</script>
+		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+		<script type="text/javascript">
+			require(["mojo/signup-forms/Loader"], function(L) {
+				L.start({
+					"baseUrl": "mc.us9.list-manage.com",
+					"uuid": "e456e6cff6de66ea7893663b1",
+					"lid": "c1dc220175"
+				})
+			})
+		</script>
+	</head>
 <!--
 BODY
 -->
-	</head>
 	<body>
 <!--
 SECTION I
 -->
 		<section id="intro" class="animated flipInX">
 			<div class="one">
-				<h1 class="faa-parent animated-hover"><i class="fa fa-codepen fa-2x faa-ring"></i><br />Neatella</h1>
-				<p>Neatella is a sweet landing page for apps and software.<br />I cooked this up when i started messing around with <a href="http://www.sass-lang.com">Sass</a>,<a href="http://www.bourbon.io"> Bourbon</a> and <a href="http://neat.bourbon.io">Neat</a>.<br />Feel free to use and edit anyway you like!</p>
-			<div class="download">
-				<a href="#download" class="button" title="Get your copy"><i class="fa fa-cloud-download fa-lg"></i> Download</a>
-				<a href="https://github.com/TGIFelix/neatella" class="button" title="Fork on Github"><i class="fa fa-github fa-lg"></i> Source Code</a>
-			</div>
+				<h1 class="faa-parent animated-hover"><i class="fa fa-codepen fa-2x faa-ring"></i>
+					<br />Neatella</h1>
+				<p>Neatella is a sweet landing page for apps and software.
+					<br />I cooked this up when i started messing around with <a href="http://www.sass-lang.com">Sass</a>,<a href="http://www.bourbon.io"> Bourbon</a> and <a href="http://neat.bourbon.io">Neat</a>.
+					<br />Feel free to use and edit anyway you like!</p>
+				<div class="download">
+					<a href="#download" class="button" title="Get your copy"><i class="fa fa-cloud-download fa-lg"></i> Download</a>
+					<a href="https://github.com/TGIFelix/neatella" class="button" title="Fork on Github"><i class="fa fa-github fa-lg"></i> Source Code</a>
+				</div>
 			</div>
 		</section>
 <!--
@@ -52,16 +64,24 @@ SECTION II
 		<section id="about" class="animated flipInY">
 			<div class="two">
 				<h1 class="faa-parent animated-hover"><i class="fa fa-rebel faa-ring"></i> Responsive</h1>
-				<h2><a href="http://neat.bourbon.io">Bourbon, Neat.</a> Lemon drops donut carrot cake lollipop salted caramel cupcake. Mashmallow pie ice cream.</h2><p>Gummies icing pie muffin. Chocolate jelly-o chocolate bar chocolate jelly-o tiramisu. Candy canes cupcake chupa chups fruitcake. Tootsie roll dragée tootsie roll dessert croissant. Gummi bears ice cream sweet chocolate bar pudding fruitcake.</p><p>Apple pie caramels gummi bears chocolate caramels biscuit bear claw cookie dessert. Dragée ice cream croissant chocolate chocolate cake bonbon chocolate cupcake gummies. Topping biscuit dragée sweet wafer biscuit oat cake lollipop. Pie powder sweet liquorice soufflé muffin oat cake tootsie roll.</p>
+				<h2><a href="http://neat.bourbon.io">Bourbon, Neat.</a> Lemon drops donut carrot cake lollipop salted caramel cupcake. Mashmallow pie ice cream.</h2>
+				<p>Gummies icing pie muffin. Chocolate jelly-o chocolate bar chocolate jelly-o tiramisu. Candy canes cupcake chupa chups fruitcake. Tootsie roll dragée tootsie roll dessert croissant. Gummi bears ice cream sweet chocolate bar pudding fruitcake.</p>
+				<p>Apple pie caramels gummi bears chocolate caramels biscuit bear claw cookie dessert. Dragée ice cream croissant chocolate chocolate cake bonbon chocolate cupcake gummies. Topping biscuit dragée sweet wafer biscuit oat cake lollipop. Pie powder sweet
+					liquorice soufflé muffin oat cake tootsie roll.</p>
 			</div>
-			<img class="iphone" src="img/iphone@2x.png" alt="iPhone"/>
+			<img class="iphone" src="img/iphone@2x.png" alt="iPhone" />
 		</section>
 <!--
 SECTION III
 -->
 		<section id="service" class="animated flipInX">
-			<div class="three"><h1 class="faa-parent animated-hover"><i class="fa fa-connectdevelop faa-ring"></i> Flat Design</h1><h2>Croissant cake candy cookie sesame snaps. Donut candy canes bonbon marzipan cookie.</h2><p>Jujubes lollipop jelly beans icing soufflé. Cake dessert oat cake brownie jelly beans dragée. Biscuit topping lollipop. Oat cake tootsie roll bonbon marshmallow caramels gingerbread topping gummi bears halvah. Croissant caramels sweet chocolate cake macaroon topping. Pastry halvah marshmallow.</p></div>
-			<img class="ipad" src="img/ipad@2x.png" alt="iPad"/>
+			<div class="three">
+				<h1 class="faa-parent animated-hover"><i class="fa fa-connectdevelop faa-ring"></i> Flat Design</h1>
+				<h2>Croissant cake candy cookie sesame snaps. Donut candy canes bonbon marzipan cookie.</h2>
+				<p>Jujubes lollipop jelly beans icing soufflé. Cake dessert oat cake brownie jelly beans dragée. Biscuit topping lollipop. Oat cake tootsie roll bonbon marshmallow caramels gingerbread topping gummi bears halvah. Croissant caramels sweet chocolate cake
+					macaroon topping. Pastry halvah marshmallow.</p>
+			</div>
+			<img class="ipad" src="img/ipad@2x.png" alt="iPad" />
 		</section>
 <!--
 SECTION IV
@@ -69,14 +89,14 @@ SECTION IV
 		<section id="download" class="animated flipInY">
 			<div class="four">
 				<h1 class="faa-parent animated-hover"><i class="fa fa-cloud-download faa-ring"></i> Free Download</h1>
-				<p>Cupcake bear claw soufflé muffin. Pie cake liquorice apple pie muffin sugar. Cotton candy pie sesame snaps. Gingerbread sweet brownie dragée. Pudding chocolate candy jelly gummi bears apple pie jelly-o. <a href="https://github.com/TGIFelix/neatella">GitHub Repository</a>  gummi bears candy caramels tiramisu dessert candy canes jelly beans tart.</p>
+				<p>Cupcake bear claw soufflé muffin. Pie cake liquorice apple pie muffin sugar. Cotton candy pie sesame snaps. Gingerbread sweet brownie dragée. Pudding chocolate candy jelly gummi bears apple pie jelly-o. <a href="https://github.com/TGIFelix/neatella">GitHub Repository</a>				gummi bears candy caramels tiramisu dessert candy canes jelly beans tart.</p>
 
-			<div class="download">
-				<a href="https://github.com/TGIFelix/neatella" class="button" title="Get your copy"><i class="fa fa-github fa-lg"></i> Download from GitHub</a>
-				<a href="https://github.com/TGIFelix/neatella/blob/master/README.md" class="button" title="Read Me!"><i class="fa fa-align-left"></i> README</a>
+				<div class="download">
+					<a href="https://github.com/TGIFelix/neatella" class="button" title="Get your copy"><i class="fa fa-github fa-lg"></i> Download from GitHub</a>
+					<a href="https://github.com/TGIFelix/neatella/blob/master/README.md" class="button" title="Read Me!"><i class="fa fa-align-left"></i> README</a>
+				</div>
 			</div>
-			</div>
-			<img class="browser" src="img/browser.png" alt="Browser"/>
+			<img class="browser" src="img/browser.png" alt="Browser" />
 
 		</section>
 <!--
@@ -85,7 +105,7 @@ FOOTER
 		<footer class="animated bounceInUp">
 			<a href="http://www.tgifelix.com">Made with <i class="fa fa-heart animated faa-pulse faa-fast"></i> by TGIFelix</a>
 		</footer>
-
+		
 	</body>
 <!--
 THE END
