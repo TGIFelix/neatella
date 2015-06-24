@@ -220,11 +220,6 @@ footer {
   }
 }
 
-/* ANIMATIONS */
-.delay1 {
-  @include animation-delay(1s);
-}
-
 /* HIDE (hide buttons on small devices) */
 @media screen and (min-width: 0px) and (max-width: 720px) {
   .download {
