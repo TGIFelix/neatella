@@ -1,17 +1,16 @@
-/* BOURBON NEAT */
 @import url(normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(animate.min.css);
 @import url(font-awesome.min.css);
 @import url(font-awesome-animation.min.css);
+
+
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* SASS */
-/* IMPORTS */
 /* BODY */
 body {
   margin: 0;
