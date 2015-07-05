@@ -63,9 +63,9 @@ section {
       font-weight: bold; }
       section:nth-of-type(2n) a:hover {
         color: #fff;
-        -webkit-transition: all 0.7s;
-        -moz-transition: all 0.7s;
-        transition: all 0.7s; }
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s; }
 
 footer {
   padding: 0.7%;
@@ -265,12 +265,6 @@ footer {
     background-color: #888; }
   .button .fa {
     color: #fff !important; }
-
-/* ANIMATIONS */
-.delay1 {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s; }
 
 /* HIDE (hide buttons on small devices) */
 @media screen and (min-width: 0px) and (max-width: 720px) {

@@ -72,7 +72,7 @@ section {
       font-weight: bold;
       &:hover {
         color: $white;
-        @include transition(all 0.7s);
+        @include transition(all 0.5s);
       }
     }
   }
