@@ -1,7 +1,5 @@
-/* BOURBON NEAT */
 @import "bourbon", "neat";
 
-/* SASS */
 $color1: #373b44;
 $color2: #fe4b74;
 $white: #fff;
@@ -10,7 +8,6 @@ $button-radius: 0;
 $button-color: #888;
 $mobile: new-breakpoint(max-width 768px 4);
 
-/* IMPORTS */
 @import url(normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(animate.min.css);
